@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Evita a rolagem da página */
+}
+
+.video{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* Garante que o vídeo cubra a tela inteira */
+    z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
+}
+.fonte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+    0% { color: rgb(255, 0, 0); }   /* Vermelho */
+    33% { color: rgb(0, 255, 0); }  /* Verde */
+    66% { color: rgb(0, 0, 255); }  /* Azul */
+    100% { color: rgb(255, 0, 0); } /* Volta para o vermelho */
+}
+input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
